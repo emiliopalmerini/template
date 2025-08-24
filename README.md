@@ -60,5 +60,5 @@ Note:
 ## ADR (Architectural Decision Records)
 
 La documentazione delle decisioni architetturali è disponibile in `docs/adr`.
-Indice ADR: [docs/adr/README.md](./docs/adr/README.md)
+Indice ADR: [docs/adrs/README.md](./docs/adrs/README.md)
 
