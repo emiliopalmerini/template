@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  repo-sanity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Check for merge conflict markers
+        run: |
+          if git grep -nE '<<<<<<<|=======|>>>>>>>' -- . ':!**/.github/**' ; then
+            echo "Merge conflict markers found" && exit 1
+          fi
+      - name: Basic Markdown check
+        run: |
+          echo "Scanning markdown files..."
+          ls -1 **/*.md || true
+      - name: Print repo tree
+        run: |
+          tree -a -L 2 || ls -la

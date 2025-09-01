@@ -60,5 +60,31 @@ Note:
 ## ADR (Architectural Decision Records)
 
 La documentazione delle decisioni architetturali è disponibile in `docs/adr`.
-Indice ADR: [docs/adrs/README.md](./docs/adrs/README.md)
+Indice ADR: [docs/adr/README.md](./docs/adr/README.md)
 
+---
+## LLM & Agenti
+
+- Linee guida per l'uso di agenti (Codex/Claude/Gemini): vedi `AGENTS.md`.
+- Note specifiche per modello: `CODEX.md`, `CLAUDE.md`, `GEMINI.md`.
+- Variabili d'ambiente per API key: vedi `.env.example`.
+
+### Quick Context for LLMs
+
+**Stack**: [SPECIFICARE: es. Node.js + Express, Python + FastAPI, Go + Gin, ecc.]
+
+**Comandi essenziali**:
+```bash
+make help          # Lista tutti i comandi disponibili
+make setup         # Setup iniziale del progetto
+make dev           # Avvia server di sviluppo
+make test          # Esegue i test
+make lint          # Esegue linter
+make build         # Build del progetto
+```
+
+**File principali**: [SPECIFICARE: es. src/main.js, app.py, main.go, ecc.]
+
+**Database**: [SPECIFICARE se applicabile: PostgreSQL/MySQL/MongoDB/ecc.]
+
+**Note architetturali**: [AGGIUNGERE informazioni specifiche per il progetto]

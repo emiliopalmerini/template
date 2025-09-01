@@ -1,0 +1,46 @@
+{
+  "project_name": "[PROJECT_NAME]",
+  "project_type": "[web/api/cli/library/mobile/desktop]",
+  "main_language": "[javascript/typescript/python/go/java/rust/etc]",
+  "frameworks": [],
+  "package_manager": "[npm/yarn/pip/go mod/maven/cargo/etc]",
+  "database": "[postgresql/mysql/mongodb/sqlite/none]",
+  "commands": {
+    "setup": "make setup",
+    "dev": "make dev", 
+    "test": "make test",
+    "lint": "make lint",
+    "format": "make format",
+    "build": "make build"
+  },
+  "entry_points": [],
+  "key_directories": [
+    "src/",
+    "docs/",
+    ".github/"
+  ],
+  "config_files": [
+    "README.md",
+    "Makefile",
+    ".env.example"
+  ],
+  "testing": {
+    "framework": "[jest/pytest/go test/junit/etc]",
+    "test_files_pattern": "[**/*.test.js/**/*_test.py/etc]"
+  },
+  "deployment": {
+    "platform": "[docker/heroku/aws/gcp/none]",
+    "build_command": "make build"
+  },
+  "conventions": {
+    "commit_format": "conventional commits",
+    "branching": "main branch",
+    "code_style": "[prettier/black/gofmt/etc]"
+  },
+  "special_instructions": [
+    "Follow Conventional Commits format",
+    "Update documentation when changing APIs",
+    "Run tests before committing",
+    "Use ADR for architectural decisions"
+  ]
+}

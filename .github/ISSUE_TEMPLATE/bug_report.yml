@@ -1,0 +1,31 @@
+name: Bug report
+description: Segnala un malfunzionamento
+labels: [bug]
+body:
+  - type: textarea
+    id: descrizione
+    attributes:
+      label: Descrizione del bug
+      description: Spiega cosa non funziona e perché è un problema
+      placeholder: Descrizione chiara e concisa
+    validations:
+      required: true
+  - type: textarea
+    id: riproduzione
+    attributes:
+      label: Passi per riprodurre
+      placeholder: 1. … 2. … 3. …
+    validations:
+      required: true
+  - type: textarea
+    id: atteso
+    attributes:
+      label: Comportamento atteso
+    validations:
+      required: true
+  - type: textarea
+    id: contesto
+    attributes:
+      label: Contesto aggiuntivo / log
+      description: Log, screenshot, versioni, ambiente
+
